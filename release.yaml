@@ -21,6 +21,8 @@ spec:
     alertmanager:
       enabled: false
     prometheus:
+      service:
+        type: NodePort
       prometheusSpec:
         retention: 24h
         resources:
